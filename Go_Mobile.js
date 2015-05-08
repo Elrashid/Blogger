@@ -15,6 +15,8 @@ var x = $('table');
 if(! my_Is_Busy && x.length > 0){
 my_Is_Busy = true ; 
 console.log(x);
-x.stacktable();
+$( document ).ready(function() {
+    x.stacktable();
+});
 }
 });
