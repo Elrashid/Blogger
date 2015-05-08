@@ -5,7 +5,8 @@ var x = $('table');
 		my_Is_Busy = true ; 
 		console.log(x);
 
-		/////////////////////////////////////////////////
+		///////////////////////////////////////////////// 
+		var head=document.getElementsByTagName("head")[0];
 		var my_Mobile_Stylesheet = document.createElement("link"); 
 		my_Mobile_Stylesheet.rel = "stylesheet";
 		my_Mobile_Stylesheet.type = "text/css";
@@ -17,7 +18,8 @@ var x = $('table');
 		my_Mobile_Script.onload = function() {	$('table').stacktable();console.log("stacktable.js onload");	};
 		my_Mobile_Script.type = "text/javascript";
 		my_Mobile_Script.src = "http://johnpolacek.github.io/stacktable.js/stacktable.js";
-		$("head").append(my_Mobile_Script);
+		head.appendChild(my_Mobile_Script);		
+		//$("head").append(my_Mobile_Script);
 		console.log("stacktable.js append");
 		/////////////////////////////////////////////////
 	}
