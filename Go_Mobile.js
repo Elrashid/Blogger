@@ -14,9 +14,10 @@ var x = $('table');
 		/////////////////////////////////////////////////
 		my_Mobile_Script = document.createElement("script");
 		my_Mobile_Script.type = "text/javascript";
+		$("head").append(my_Mobile_Script);
 		my_Mobile_Script.src = "http://johnpolacek.github.io/stacktable.js/stacktable.js";
 		my_Mobile_Script.onload = function() {	$('table').stacktable();console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");	};
-		$("head").append(my_Mobile_Script);
+		
 		/////////////////////////////////////////////////
 	}
 });
