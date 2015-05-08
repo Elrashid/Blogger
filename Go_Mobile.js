@@ -13,4 +13,3 @@ var x = $('table');
 console.log(x);
 x.stacktable();
 });
- 
