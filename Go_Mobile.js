@@ -8,9 +8,9 @@ my_Mobile_Stylesheet.rel = "stylesheet";
 my_Mobile_Stylesheet.type = "text/css";
 my_Mobile_Stylesheet.href = "http://johnpolacek.github.io/stacktable.js/stacktable.css";
 $("head").append(my_Mobile_Stylesheet);
-
-jQuery(document).ready(function($){
+$(function() {
 var x = $('table');
 console.log(x);
 x.stacktable();
 });
+ 
