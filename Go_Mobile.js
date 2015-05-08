@@ -9,9 +9,12 @@ my_Mobile_Stylesheet.type = "text/css";
 my_Mobile_Stylesheet.href = "http://johnpolacek.github.io/stacktable.js/stacktable.css";
 $("head").append(my_Mobile_Stylesheet);
 
-
+var my_Is_Busy = false ; 
 $("body").bind("DOMSubtreeModified", function() {
 var x = $('table');
+if(! my_Is_Busy && x.length > 0){
+my_Is_Busy = true ; 
 console.log(x);
 x.stacktable();
+}
 });
