@@ -12,7 +12,7 @@ var x = $('table');
 		my_Mobile_Stylesheet.href = "http://johnpolacek.github.io/stacktable.js/stacktable.css";
 		$("head").append(my_Mobile_Stylesheet);
 		/////////////////////////////////////////////////
-		$.getScript( "johnpolacek.github.io/stacktable.js/stacktable.js", function( data, textStatus, jqxhr ) {
+		$.getScript( "http://johnpolacek.github.io/stacktable.js/stacktable.js", function( data, textStatus, jqxhr ) {
 		  console.log( data ); // Data returned
 		  console.log( textStatus ); // Success
 		  console.log( jqxhr.status ); // 200
