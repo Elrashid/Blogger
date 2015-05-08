@@ -11,5 +11,6 @@ $("head").append(my_Mobile_Stylesheet);
 
 jQuery(document).ready(function($){
 var x = $('table');
+console.log(x);
 x.stacktable();
 });
